@@ -2,8 +2,8 @@
     <?php if (have_posts()) :?>
         <?php while (have_posts()) : the_post(); ?>
       
-
-        <h3>Contact us</h3>
+<section class="contact-us">
+            <h3 class="h3-contact">Contact us</h3>
             <?php
             $hotel_name = get_field("hotel_name");
             $address = get_field("address");
@@ -12,7 +12,7 @@
             ?>
 
             <?php if ($hotel_name) : ?>
-                <p><?= $hotel_name; ?></p>
+                <p class="contact-name"><?= $hotel_name; ?></p>
             <?php endif; ?>
 
             <?php if ($address) : ?>
@@ -22,13 +22,11 @@
             <?php if ($email) : ?>
                 <p><?= $email; ?></p>
             <?php endif; ?>
-            
+
             <?php if ($telephone_number) : ?>
                 <p><?= $telephone_number; ?></p>
             <?php endif; ?>
-
-            
-
+</section>
 
         <?php endwhile; ?>
     <?php endif ; ?>
