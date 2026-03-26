@@ -7,6 +7,13 @@ Description: A simple hotel website theme built with WordPress.
 
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 
+.hero-img {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
 .h3-contact {
   font-family: 'Grand Hotel', cursive;
   font-size: 1.5rem;

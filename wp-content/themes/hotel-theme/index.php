@@ -1,7 +1,9 @@
 <?php get_header() ?>
     <?php if (have_posts()) :?>
         <?php while (have_posts()) : the_post(); ?>
-      
+
+<?php get_template_part("template-parts/index", "hero") ?>
+   
 <section class="contact-us">
             <h3 class="h3-contact">Contact us</h3>
             <?php
