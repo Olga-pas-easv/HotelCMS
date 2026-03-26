@@ -12,6 +12,33 @@ Description: A simple hotel website theme built with WordPress.
   height: 500px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.container-welcome {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  background-color: #1e1e1e60;
+}
+
+.container-welcome h1 {
+  color: white;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.container-welcome p {
+  color: white;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .h3-contact {
@@ -20,28 +47,27 @@ Description: A simple hotel website theme built with WordPress.
   font-size: 36px;
 }
 
+.text-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  text-align: start;
+  font-size: 20px;
+  line-height: 1.9;
+  color: #2f2f2f;
+}
+
 .contact-name {
   font-weight: 800;
 }
 
-#hero {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/lobby.jpg);
-  background-size: 100%;
-  background-position: center center;
-  color: white;
-  height: 200px;
-  margin-bottom: 50px;
+.contact-us {
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
 }
-
 .navbar-brand {
   font-family: 'Grand Hotel', cursive;
   font-size: 2rem;
-}
-
-#hero h1 {
-  font-family: 'Grand Hotel', cursive;
 }
 
 body {
@@ -64,8 +90,6 @@ main {
   flex: 1 0 auto;
   margin-top: 10px;
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
