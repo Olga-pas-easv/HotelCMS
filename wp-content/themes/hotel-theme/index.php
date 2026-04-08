@@ -6,6 +6,8 @@
 
 <?php get_template_part("template-parts/index", "amenities") ?>
 
+<?php get_template_part("template-parts/index", "testimonials") ?>
+
         <?php endwhile; ?>
     <?php endif ; ?>
 <?php get_footer() ?>

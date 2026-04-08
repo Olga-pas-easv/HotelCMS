@@ -82,6 +82,24 @@ Description: A simple hotel website theme built with WordPress.
   color: #ffffff;
 }
 
+#testimonials {
+  height: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonials .testimonial {
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #2e1800;
+  border-radius: 5px;
+  background-color: #be9f7c;
+}
+
 .contact-name {
   font-weight: 800;
 }
