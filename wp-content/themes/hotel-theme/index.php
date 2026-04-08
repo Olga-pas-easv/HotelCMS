@@ -3,6 +3,8 @@
         <?php while (have_posts()) : the_post(); ?>
 
 <?php get_template_part("template-parts/index", "hero") ?>
+
+<?php get_template_part("template-parts/index", "amenities") ?>
    
 <section class="contact-us">
             <h3 class="h3-contact">Contact us</h3>
@@ -29,8 +31,6 @@
                 <p><?= $telephone_number; ?></p>
             <?php endif; ?>
 </section>
-
-<?php get_template_part("template-parts/index", "amenities") ?>
 
         <?php endwhile; ?>
     <?php endif ; ?>
