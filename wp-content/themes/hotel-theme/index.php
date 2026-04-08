@@ -30,6 +30,8 @@
             <?php endif; ?>
 </section>
 
+<?php get_template_part("template-parts/index", "amenities") ?>
+
         <?php endwhile; ?>
     <?php endif ; ?>
 <?php get_footer() ?>
