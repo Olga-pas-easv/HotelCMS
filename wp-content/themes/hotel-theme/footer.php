@@ -1,12 +1,8 @@
     </main>
 
     <footer class="footer py-3 bg-dark text-white text-center">
-         <?php
-        $map = get_field("map", get_option("page_on_front"));
-        ?>
-
-           
-<section class="contact-us">
+                  
+        <section class="contact-us">
             <h3 class="h3-contact">Contact us</h3>
             <?php
             $hotel_name = get_field("hotel_name", get_option("page_on_front"));
@@ -30,7 +26,11 @@
             <?php if ($telephone_number) : ?>
                 <p><?= $telephone_number; ?></p>
             <?php endif; ?>
-</section>
+        </section>
+
+        <?php
+        $map = get_field("map", get_option("page_on_front"));
+        ?>
 
         <img class="map" src="<?= $map["url"] ?>" alt="Map of location">
 
