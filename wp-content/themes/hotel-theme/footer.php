@@ -2,6 +2,12 @@
 
     <footer class="footer py-3 bg-dark text-white text-center">
                   
+    <?php
+            $map = get_field("map", get_option("page_on_front"));
+            ?>
+    
+    <img class="map" src="<?= $map["url"] ?>" alt="Map of location">
+
         <section class="contact-us">
             <h3 class="h3-contact">Contact us</h3>
             <?php
@@ -28,11 +34,9 @@
             <?php endif; ?>
         </section>
 
-        <?php
-        $map = get_field("map", get_option("page_on_front"));
-        ?>
+      
 
-        <img class="map" src="<?= $map["url"] ?>" alt="Map of location">
+  
 
          &copy; Copyright 2026 Hotel CMS. All rights reserved.
     </footer>

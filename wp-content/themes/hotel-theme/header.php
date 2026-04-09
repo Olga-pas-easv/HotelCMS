@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-light bg-light navbar-expand-md">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="<?= get_permalink (get_page_by_path("frontpage"))?>">
                     <img src="<?= get_template_directory_uri(); ?>/images/logo.png" alt="" width="45" height="36" class="d-inline-block align-text-top">
                     Hotel CMS
                 </a>
