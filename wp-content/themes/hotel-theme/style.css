@@ -82,8 +82,9 @@ Description: A simple hotel website theme built with WordPress.
   color: #ffffff;
 }
 
-<<<<<<< Updated upstream
 #testimonials {
+  max-width: 1100px;
+  margin: auto;
   height: auto;
   padding: 50px;
   display: flex;
@@ -96,10 +97,18 @@ Description: A simple hotel website theme built with WordPress.
   margin-bottom: 30px;
   padding: 20px;
   width: 100%;
-  border: 1px solid #2e1800;
+  border: 1px solid #837567;
   border-radius: 5px;
-  background-color: #be9f7c;
-=======
+  background-color: #ece8df;
+}
+
+#testimonials h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+
 .container-events {
   max-width: 1100px;
   margin: 0 auto;
@@ -117,7 +126,6 @@ Description: A simple hotel website theme built with WordPress.
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
->>>>>>> Stashed changes
 }
 
 .contact-name {
